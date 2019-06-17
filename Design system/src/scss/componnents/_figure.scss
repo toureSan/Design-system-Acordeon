@@ -1,0 +1,24 @@
+figure {
+    margin: 0;
+    background: #cccccc;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &.figure-demo { 
+        height: 200px;
+
+        @include respond-to (max-width, ( $sm - 1 )) { width: 100%; }
+    }
+}
+
+.hero {
+    background: #444dad;
+    margin-bottom: 20px;
+
+    @include respond-to (min-width, $md) { margin-bottom: 50px; }
+
+
+}

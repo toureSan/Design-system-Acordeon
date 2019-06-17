@@ -1,0 +1,134 @@
+.gradient-demo {
+  min-width: 100px;
+  height: 450px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 5px; }
+
+.gradient--blue_purple-gradient {
+  background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }
+
+.gradient--blue_purple_purple_gradient {
+  background: -webkit-linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%);
+  background: -o-linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%);
+  background: linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%); }
+
+.gradient--gradient--red_pink_gradient {
+  background: -webkit-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  background: -o-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  background: linear-gradient(45deg, #ff4354 0%, #ff26d9 100%); }
+
+.gradient--gradient--light_green_purle {
+  background: -webkit-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  background: -o-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  background: linear-gradient(45deg, #79fb92 0%, #7b75fe 100%); }
+
+.blue_purple-gradient {
+  background: -moz-linear-gradient(left, #79ccff 1%, #9b74ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #79ccff 1%, #9b74ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #79ccff), to(#9b74ff));
+  background: -o-linear-gradient(left, #79ccff 1%, #9b74ff 100%);
+  background: linear-gradient(to right, #79ccff 1%, #9b74ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.blue_purle_purple_gradient {
+  background: -moz-linear-gradient(45deg, #1ff8ed 1%, #9f4ff9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #1ff8ed 1%, #9f4ff9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #1ff8ed 1%, #9f4ff9 100%);
+  background: linear-gradient(45deg, #1ff8ed 1%, #9f4ff9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.red_pink_gradient {
+  background: -moz-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  background: linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.light_green_purle {
+  background: -moz-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  background: linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.yellow_red_gradient {
+  background: #ffce3a;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ffce3a 0%, #ff1168 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ffce3a 0%, #ff1168 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #ffce3a 0%, #ff1168 100%);
+  background: linear-gradient(45deg, #ffce3a 0%, #ff1168 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.yellow_purle_gradient {
+  background: -moz-linear-gradient(45deg, #faca80 1%, #9b74ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #faca80 1%, #9b74ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #faca80 1%, #9b74ff 100%);
+  background: linear-gradient(45deg, #faca80 1%, #9b74ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.red_become_purple {
+  background: #de9285;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #de9285 0%, #6866ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #de9285 0%, #6866ff 100%);
+  /* Chrome10-25,Safari5.1-6 */ }
+
+.green_become_yellow {
+  background: #79ff7c;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #79ff7c 0%, #ffbd4a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #79ff7c 0%, #ffbd4a 100%);
+  /* Chrome10-25,Safari5.1-6 */ }
+
+.blue_become_purple {
+  background: #00fff0;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #00fff0 0%, #d322ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #00fff0 0%, #d322ff 100%);
+  /* Chrome10-25,Safari5.1-6 */ }
+
+.red_become_orange {
+  background: #ff2d72;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ff2d72 0%, #ffab79 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff2d72 0%, #ffab79 100%);
+  /* Chrome10-25,Safari5.1-6 */ }
+
+.pink_become_purple {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff18ab+0,6e03ff+100 */
+  background: #ff18ab;
+  /* Old browsers */
+  background: -webkit-linear-gradient(45deg, #ff18ab 0%, #6e03ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #ff18ab 0%, #6e03ff 100%);
+  background: linear-gradient(45deg, #ff18ab 0%, #6e03ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.cyan_become_blue {
+  background: -moz-linear-gradient(45deg, #00ffd8 0%, #007eff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #00ffd8 0%, #007eff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #00ffd8 0%, #007eff 100%);
+  background: linear-gradient(45deg, #00ffd8 0%, #007eff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }

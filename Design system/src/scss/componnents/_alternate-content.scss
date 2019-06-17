@@ -1,0 +1,61 @@
+.alternate {
+    display: flex;
+    align-items: center;
+
+    > * { 
+        @include respond-to (min-width, $sm) { width: calc(50% - #{$gutter}); }
+    }
+
+    &--start { 
+        flex-direction: column;
+
+        @include respond-to (min-width, $sm) { flex-direction: row; }
+        @include respond-to (min-width, $md) { flex-direction: row !important; }
+
+        > * {
+            @include respond-to (min-width, $sm) { 
+                &:first-child { margin-right: #{$gutter}; }
+                &:last-child { margin-left: #{$gutter}; }
+            }
+        }
+    }
+
+    &--end { 
+        flex-direction: column;
+
+        @include respond-to (min-width, $sm) { flex-direction: row-reverse; }
+        @include respond-to (min-width, $md) { flex-direction: row-reverse !important; }
+
+        > * {
+            @include respond-to (min-width, $sm) { 
+                &:first-child { margin-left: #{$gutter}; }
+                &:last-child { margin-right: #{$gutter}; }
+            }
+        }
+    }
+
+    &--wide {
+        @include respond-to (min-width, $sm) { flex-direction: column; }
+
+        > * { 
+            @include respond-to (min-width, $sm) { width: 100%; }
+            @include respond-to (min-width, $md) { width: 50%; }
+
+            &:first-child {
+                margin: 0;
+                padding-bottom: 50%;
+                background: #6270ff;
+                align-self: stretch;
+
+                @include respond-to (min-width, $md) { padding-bottom: 0; }
+            }
+
+            &:last-child {
+                margin: 0;
+                padding: 25px 50px;
+
+                @include respond-to (min-width, $md) { padding: 150px; }
+            }
+        }
+    }
+}

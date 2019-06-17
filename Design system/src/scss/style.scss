@@ -1,0 +1,212 @@
+//Fonts
+@import "common/variable";
+@import "common/font";
+//Création de la grille
+@import "componnents/grille";
+
+//BODY
+//@import "view/header";
+@import "view/body";
+@import "common/libs/mixin";
+@import "common/libs/absolute";
+//différentes type de gradients
+@import "common/libs/gradients.scss";
+
+
+@import "common/libs/placeholder";
+/*view*/
+/*commponnent*/
+@import "componnents/button";
+@import "componnents/figure";
+@import "componnents/alternate-content";
+@import "componnents/tabs";
+@import "componnents/figure";
+
+
+
+//gradient page 
+body{
+    margin: $headerMargin;  
+    }  
+    *{
+        box-sizing: border-box;   
+header{  
+    .hero{
+        display: flex;
+       padding: 30px 0; 
+        justify-content: center;
+        align-items: center;
+        background: #1e5799;
+      
+    } 
+.text-gradient{
+    font-size: 72px;
+    color:white;
+    font-family: "BwModelica-ExtraBold";
+    padding-top: 43px;
+}
+
+}
+  nav{
+    @include navigation;                  
+    ul {
+        @include ul-type;
+       }
+      
+        a{
+            @include decoration-type;
+        }
+           li {
+               @include li-type;
+               
+               .fa-phone{
+                 @include phone-icon-size;
+
+             span{
+               @include span-type;
+               }
+           }
+        }   
+    }
+} 
+
+footer{
+    
+    padding: 5px ;
+    background: #03062F;
+    margin-top:7rem;
+    
+    nav{
+        @include navigation;                  
+        ul {
+            @include ul-type;
+        }
+    li{
+        @include decoration-type($ColorType:#6270ff);
+    }
+    li{
+         @include li-type($margin_left:20px);
+    }
+    }
+}
+
+//page text-columns
+
+.text-col{
+    @include title-type-bold;
+}
+
+p{
+    @include paragraphe-type;
+}
+
+//end page text-columns
+
+
+//page typographie 
+.title-typographie{
+    @include title-type-bold;
+}
+
+.second-title-size34{
+    @include title-type-bold($textAlign:left);
+}
+
+.second-title-size30{
+    @include title-type-bold($fontSize:30px, $textAlign:left);
+}
+
+.second-title-size24{
+    @include title-type-bold($fontSize:24px, $textAlign:left);
+}
+.second-title-size20{
+    @include title-type-bold($fontSize:20px, $textAlign:left);
+}
+
+.second-title-size16{
+    @include title-type-bold($fontSize:16px, $textAlign:left);
+}
+.second-title-size14{
+    @include title-type-bold($fontSize:14px, $textAlign:left);
+}
+
+.Quote-title{
+    @include title-type-bold;
+}
+
+.lign-gradient{
+
+    @include lign-gradient; 
+     
+ }
+.paragraphe-italic{
+    @include paragraphe-type($color:#2e2e2e, $fontSize: 20px, $fontFamily:"BwModelica-RegularItalic");
+}
+
+.paragraphe-italic-gray{
+    @include paragraphe-type($color:#838383, $fontSize: 20px, $fontFamily:"BwModelica-RegularItalic");
+}
+
+.Leterine{
+    @include span-Lettre($lineHeight:0%, $float:none, $marginRight:0, $marginLeft:0, $marginTop:0,);
+}
+
+.color-blue{
+    color:#6270ff ;
+    font-family: "BwModelica-Bold";
+}
+
+.lettre-color-blue{
+    @include color-text;
+}
+.lettre-color-red{
+    @include color-text($backgroundColor:#ff206f);
+}
+
+
+.leterine-regular{
+    @include span-Lettre($fontFamily:"BwModelica-Bold");
+}
+
+.Leterine-gras{
+    @include span-Lettre($fontFamily:"BwModelica-Bold");
+}
+.border-leterine{
+    @include span-leterine-border;
+}
+.Leterine-gras-italic{
+    @include span-Lettre($fontFamily:"BwModelica-ExtraBoldItalic");
+}
+.Leterine-gras-italic-gras{
+    @include span-Lettre($fontFamily:"BwModelica-BoldItalic");
+}
+
+.border-leterine-radius{
+    @include span-leterine-border($borderRadius:50%);
+}
+
+
+//************
+.uppercase-text{
+    @include paragraphe-type($textTransform:uppercase, $textAlign:center);
+}
+
+.text-wonderfull{
+    @include title-type-bold;
+}
+
+.text-wonderfull-size-48{
+    @include title-type-bold($fontSize:48px);
+}
+
+.paragraphe-bold{
+    @include paragraphe-type($fontSize:18px, $fontFamily:"BwModelica-BoldItalic", $textAlign:center);
+
+}
+.text-wonderfull-size-36{
+    @include title-type-bold($fontSize:36px);
+}
+
+
+
+

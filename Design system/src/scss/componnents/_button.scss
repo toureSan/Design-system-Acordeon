@@ -1,0 +1,85 @@
+.button {
+    margin-bottom: 5rem;
+    
+
+    .button-type {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-family: "BwModelica-Medium";
+
+       
+
+
+
+            li {
+                display: block;
+                background: #79ccff;
+                background: -moz-linear-gradient(45deg, #79ccff 0%, #6270ff 100%);
+                background: -webkit-linear-gradient(45deg, #79ccff 0%, #6270ff 100%);
+                background: linear-gradient(45deg, #79ccff 0%, #6270ff 100%);
+                padding: 15px 2rem;
+                color: white;
+               
+
+                &+li {
+                    margin-top: 5px;
+                }
+
+                &.button-type--shadow {
+                    box-shadow: 3px 3px 3px grey;
+                }
+                &.button-type--border{
+                    border: 3px solid transparent;
+                    background-clip: padding-box, border-box;
+                    background-origin: padding-box, border-box;
+                    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+                    color: black;
+                }
+
+                &.button-type--radius{
+                    border-radius: 20px;
+                   
+                }
+                
+                &.button-type-radius--border{
+                    border: 3px solid transparent;
+                    background-clip: padding-box, border-box;
+                    background-origin: padding-box, border-box;
+                    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+                    border-radius: 20px; 
+                    color: black;
+                        
+                }
+
+                &.button-type--radius--shadow {
+                    box-shadow: 3px 3px 3px grey;
+                }
+
+                &.button-type-radius--extra{border-radius:50px;}
+
+                &.button-type-radius-extra--vide{
+
+                    border: 3px solid transparent;
+                    background-clip: padding-box, border-box;
+                    background-origin: padding-box, border-box;
+                    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+                    border-radius: 20px;   
+                    color: black; 
+                }
+
+            }
+           
+        }
+    }
+    h2{
+        @include h2($textalign:center);
+    }
+    .fa-play-circle{
+        margin-left:1rem;
+    }
+}
+

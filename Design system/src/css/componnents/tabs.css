@@ -1,0 +1,21 @@
+.tabs .tabs-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .tabs .tabs-nav ul li {
+    display: block;
+    background: #f1f6f9;
+    padding: 15px 20px;
+    color: black; }
+    .tabs .tabs-nav ul li + li {
+      margin-top: 5px; }
+    .tabs .tabs-nav ul li.tab-nav-item-active {
+      background: #6270ff;
+      color: white; }
+
+.tabs .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .tabs .tab-content.tab.content--inactive {
+    display: none; }

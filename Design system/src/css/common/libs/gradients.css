@@ -1,0 +1,22 @@
+.gradient-box {
+  min-width: 450px;
+  min-height: 450px;
+  float: left;
+  margin-bottom: 30px;
+  border-radius: 10%; }
+  .gradient-box.gradient--blue_purple-gradient {
+    background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+    background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+    background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }
+  .gradient-box.gradient--blue_purple_purple_gradient {
+    background: -webkit-linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%);
+    background: -o-linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%);
+    background: linear-gradient(45deg, #1ff8ed 0%, #9f4ff9 100%); }
+  .gradient-box.gradient--red_pink_gradient {
+    background: -webkit-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+    background: -o-linear-gradient(45deg, #ff4354 0%, #ff26d9 100%);
+    background: linear-gradient(45deg, #ff4354 0%, #ff26d9 100%); }
+  .gradient-box.gradient--light_green_purle {
+    background: -webkit-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+    background: -o-linear-gradient(45deg, #79fb92 0%, #7b75fe 100%);
+    background: linear-gradient(45deg, #79fb92 0%, #7b75fe 100%); }

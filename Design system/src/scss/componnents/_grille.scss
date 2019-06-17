@@ -1,0 +1,68 @@
+$container_max: 1280px;
+$total_col: 12;
+$gutter: 15;
+$total_gutter: $gutter * 2;
+
+@mixin grid ($size, $number, $gutter) {
+    @for $i from 1 through $number {
+        .col-#{$size}-#{$i}{
+            $math: ((100% / $number) * $i);
+            $gutterTotal: ($gutter * 2);
+
+            width: calc(#{$math} - #{$gutterTotal}px);
+            margin: 0 #{$gutter}px;
+            flex-shrink: 0;
+            
+        }
+    }
+}
+
+@include grid('xs', $total_col, $gutter);
+
+@media (min-width: 768px){
+    @include grid ('sm', $total_col, $gutter);
+}
+
+@media (min-width: 992px){
+    @include grid ('md', $total_col, $gutter);
+}
+
+@media (min-width: 1200px){
+    @include grid ('lg', $total_col, $gutter);
+}
+
+.container {
+    width: calc(100% - 20px);
+    max-width: $container_max;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.row {
+    margin: 0 -#{$gutter}px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    &.align-items-center { align-items: center; }
+    &.align-items-start { align-items: flex-start; }
+    &.align-items-end { align-items: flex-end; }
+    
+
+}
+
+h1 {
+
+color: #ffffff;
+font-size: 48px;
+font-weight: bold;
+margin: 0;
+display:flex;
+justify-content: center;
+font-family: "BwModelica-ExtraBold";
+}
+
+
+
+

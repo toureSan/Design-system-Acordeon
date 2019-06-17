@@ -1,0 +1,145 @@
+//*************************************************** ALL OF MY MIXINS ***********************************************************//
+
+//*************************************************** HEADER MIXINS ***********************************************************//
+
+@mixin navigation($fontSize:14px, $fontFamily:"BwModelica-Medium") {
+    display: flex;
+    font-family:$fontFamily;
+    font-size: $fontSize;
+}
+@mixin ul-type($marginTop:0, $marginBottom:0, $listStyle:none, $display:flex, $justify-content:space-between, $flex-grow:1, $color:red) {//a demander au prof si c'est utile de devoir tout mettre en fonction
+    margin-top: $marginTop;
+    margin-bottom: $marginBottom;
+    list-style: $listStyle;
+    display: $display;
+    justify-content: $justify-content;  
+    flex-grow: $flex-grow;
+}
+@mixin decoration-type($textDecoration:none, $ColorType:black){
+    text-decoration: $textDecoration;
+    color: $ColorType;
+}
+@mixin li-type($margin_left:50px, $line_height:4.5){
+    &:first-child{
+        flex-grow: 1;     
+    }  
+    margin-left: $margin_left;
+    line-height: $line_height; 
+}
+@mixin phone-icon-size($background-color:#6270ff, $size: 32px ) {
+    background: $background-color;
+    padding: $size;
+}
+
+@mixin span-type($fontFamily2:"BwModelica-ExtraBold bold") {
+    font-family:$fontFamily2;   
+}
+//**************************************************** END HEADER MIXINS *************************************************
+
+//**************************************************** ALL GRADIENT MIXINS **********************************************
+
+
+
+
+//*************************************************** END GRADIENT MIXINS ***********************************************
+
+//*************************************************** MIXINS GRID ***************************************************
+
+
+
+
+@mixin title-type-bold($fontFamily-2:"BwModelica-Bold", $fontSize:34px, $textAlign:center) {
+    font-family:$fontFamily-2;
+    font-size: $fontSize;
+    text-align: $textAlign;
+
+}
+
+@mixin paragraphe-type($fontFamily:"BwModelica-Regular", $textAlign:left, $fontSize:15px, $color:#838383, $textTransform:none) {
+    font-family: $fontFamily;
+    font-size:$fontSize;
+    text-align: $textAlign;
+    color: $color;
+    text-transform: $textTransform;
+    
+}
+
+@mixin lign-gradient($background:#1e5799 /* Old browsers */, $background_FF3: -moz-linear-gradient(45deg, #1e5799 0%, #7acaff 2%, #9b74ff 100%) /* FF3.6-15 */,$backgroundChrome:-webkit-linear-gradient(45deg, #1e5799 0%,#7acaff 2%,#9b74ff 100%) /* Chrome10-25,Safari5.1-6 */, $backgroundOldChrome:linear-gradient(45deg, #1e5799 0%,#7acaff 2%,#9b74ff 100%),$margin-left:-5rem,$height:0.2rem, $width:9rem,$marginTop:5rem, $float:left, $transform:rotate(91deg)) {
+    background: $background;
+    background:$background_FF3;
+    background: $backgroundChrome;
+    background: $backgroundOldChrome;
+    margin-left: $margin-left;
+    height:$height;
+    width:$width;
+    margin-top: $marginTop;
+    float: $float;
+    transform:$transform;
+}
+
+@mixin span-Lettre($Color:#6270ff, $FontSize:45px, $fontFamily:"BwModelica-RegularItalic", $float:left, $marginRight: 1em, $textIndent:0, $marginTop:0.4em, $lineHeight:83%, $marginLeft:0.8em) {
+    color: $Color;
+    font-size: $FontSize;
+    font-family: $fontFamily;
+    float:$float;
+    margin-right: $marginRight;
+    text-indent: $textIndent;
+    margin-top:$marginTop;
+    line-height: $lineHeight;
+    margin-left: $marginLeft;
+
+
+}
+
+@mixin span-leterine-border($color:white, $fontSize:36px, $background:#7ac9ff,$backgroundMoz:-moz-linear-gradient(45deg, #7ac9ff 0%, #9a78ff 100%), $BackgroundWebkit:-webkit-linear-gradient(45deg, #7ac9ff 0%,#9a78ff 100%),$BackgroundChromeOpera:linear-gradient(45deg, #7ac9ff 0%,#9a78ff 100%),$padding:20px,$float:left, $textIndent:0, $marginRight:0.5em, $borderRadius:0%s){
+    color:$color;
+    font-size: $fontSize;
+    background:$background;
+    background:$backgroundMoz;
+    background:$BackgroundWebkit;
+    background:$BackgroundChromeOpera;
+    padding:$padding;
+    float: $float;
+    text-indent: $textIndent;
+    margin-right: $marginRight;
+    font-family: 'BwModelica-Bold';
+    line-height: 30%;
+    border-radius:$borderRadius;
+    
+
+
+}
+
+
+@mixin color-text($color: #838383, $backgroundColor:#818cff){
+    color:$color;
+    background: $backgroundColor;
+    
+}
+
+
+@mixin respond-to($prop, $query) {
+    @media ($prop: $query) {
+        @content
+    }
+}
+
+@mixin h3($fonsize:30px, $fontweight:bold, $margin:0, $textalign:center){
+    font-size: $fonsize;
+    font-weight: $fontweight;
+    margin: $margin;
+    text-align: $textalign;
+    font-family:"BwModelica-Regular";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@mixin h2($fonsize:30px, $fontweight:bold, $margin:0, $textalign:left){
+    font-size: $fonsize;
+    font-weight: $fontweight;
+    margin: $margin;
+    text-align: $textalign;
+    font-family:"BwModelica-Regular";
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

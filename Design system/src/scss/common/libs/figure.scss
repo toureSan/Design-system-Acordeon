@@ -1,0 +1,14 @@
+figure {
+    margin: 0;
+    background: #cccccc;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &.figure-demo { 
+        height: 200px;
+
+    }
+}
